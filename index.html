@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Number Guessing Game</title>
+  </head>
+
+  <body>
+    <div class="flex flex-column align-center justify-evenly mb-50 mt-50">
+      <h1 id="heading">Guess My Number</h1>
+      <h2 id="sub-heading">Between 1 - 10</h2>
+    </div>
+    <div class="flex justify-evenly align-center mb-50 mt-50">
+      <button id="start-button">Start</button>
+      <span id="resultText"
+        >Guess My Number
+        <span id="result"><i class="fa-solid fa-question"></i></span
+      ></span>
+    </div>
+
+    <div class="flex align-center justify-evenly mb-50 mt-50">
+      <div class="flex flex-column align-center justify-evenly mb-50 mt-50">
+        <input type="number" id="input" />
+        <button id="btn-check" class="mt-50">Check</button>
+      </div>
+      <div
+        class="flex flex-column align-center justify-center mb-50 mt-50"
+        id="answers-tab"
+      >
+        <div id="guess">Start Guessing...</div>
+        <div class="mt-50">Score = <span id="score">0</span></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
